@@ -73,7 +73,7 @@ export async function getAllProducts(req, res) {
 ![alt text](image.png)
 
 ### **Code Explanation👨🏻‍💻**
-I got you! Let’s break the `getAllProducts` function into easy-to-understand steps. This function fetches products from your database based on the filters provided by the user in the request. We’ll go through it step-by-step and see how everything works.
+Let’s break the `getAllProducts` function into easy-to-understand steps. This function fetches products from our database based on the filters provided by the user in the request. We’ll go through it step-by-step and see how everything works.
 
 ---
 
