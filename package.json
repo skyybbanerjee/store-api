@@ -1,0 +1,21 @@
+{
+  "name": "store-api",
+  "version": "1.0.0",
+  "description": "STORE_API, don't need frontend here",
+  "main": "app.js",
+  "type":"module",
+  "scripts": {
+     "start": "nodemon app.js"
+  },
+  "author": "Soumadip Banerjee",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "express-async-errors": "^3.1.1",
+    "mongoose": "^8.10.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  }
+}
