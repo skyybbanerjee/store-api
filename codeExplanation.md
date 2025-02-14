@@ -26,7 +26,7 @@ export async function getAllProducts(req, res) {
       "=": "$eq",
     };
 
-    const regEx = /\b(<|>|>=|=|<|<=)\b/g; //! copied from , don't sweat it
+    const regEx = /\b(<|>|>=|=|<|<=)\b/g; // from stackOverflow
     let filters = numericFilters.replace(
       regEx,
       (match) => `-${operatorMap[match]}-`
@@ -41,7 +41,7 @@ export async function getAllProducts(req, res) {
     });
   }
 
-  console.log(queryObj); //{ price: { '$gt': 40 }, rating: { '$gte': 4 } }
+  console.log(queryObj); // { price: { '$gt': 40 }, rating: { '$gte': 4 } }
   let result = ProductModel.find(queryObj);
   if (sort) {
     const sortedList = sort.split(",").join(" ");
