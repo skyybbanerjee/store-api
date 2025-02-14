@@ -168,4 +168,4 @@ app.listen(3000, () => console.log("Server running on port 3000"));
 
 ### **Why Import It in the Entry Point?**
 - **Global Effect:** Since `express-async-errors` modifies how Express handles routes, importing it early in the entry point file ensures that all routes and middlewares in the app are automatically patched.
-- **No Need for Multiple Imports:** You only need to import it once, and it will work across all route handlers and middleware throughout the entire app.
+- **No Need for Multiple Imports:** We only need to import it once, and it will work across all route handlers and middleware throughout the entire app.
